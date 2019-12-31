@@ -1,12 +1,11 @@
 <?php
 
 header("X-XSS-Protection:0");
-if($GET)
-{
 
+if($GET){
+	
 	echo $_GET["data"];
 }
-
 
 ?>
 
@@ -14,7 +13,7 @@ if($GET)
 <form action="/" method="GET">
 
 	Write : <input type="text" name="data"  >
-			<input type="submit" value="send">
+		<input type="submit" value="send">
 
 
 
